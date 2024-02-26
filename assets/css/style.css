@@ -171,6 +171,26 @@ main {
         margin-top: 79px;
     }
 
+    /* Section #reasons */
+
+    #reasons {
+        margin: 20px auto ;
+        width: 90%;
+
+    }
+
+    #reasons h2 {
+        font-size: 280%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    #benifits-physical>div,
+    #benifits-mental>div {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
     /* Hero */
     #cover-text {
         width: 300px;
