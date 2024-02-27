@@ -244,6 +244,7 @@ main {
     }
 }
 
+/* Larger devices (desktop only) */
 @media screen and (min-width: 1200px) {    
     /* Reasons section */
     #benefits {
@@ -255,12 +256,12 @@ main {
         flex: 1;
     }
 
-    #benefits-image {
-        order: 0;
+    #circle-cover-bg {
+        order: 1;
     }
 
     #benefits-mental {
-        order: 1;
+        order: 0;
     }
 
     #benefits-mental > div {
