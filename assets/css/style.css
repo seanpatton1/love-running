@@ -257,11 +257,11 @@ main {
     }
 
     #benefits-image {
-        order: 1;
+        order: 0;
     }
 
     #benefits-mental {
-        order: 0;
+        order: 1;
     }
 
     #benefits-mental > div {
