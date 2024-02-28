@@ -27,10 +27,6 @@ h3 {
     color: #252525;
 }
 
-.hidden-heading {
-    display: none;
-}
-
 /* Header */
 header {
     background-color: #ffffff;
@@ -164,8 +160,7 @@ main {
     justify-content: center;
 }
 
-/* Meet-up times */
-
+/* Meetup Times section */
 #times {
     background: url('../images/dublin-city.webp') no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
@@ -175,29 +170,28 @@ main {
 
 #times div {
     color: #fafafa;
-    background-color: rgba (0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .6);
     padding: 15px;
     text-align: center;
     /* This will not wrap on screens of less than 400px wide.
-    Each div will expand to fill the available space on its own */
+    Each div will expand to fill the available space on its row */
     flex-basis: 200px;
     flex-grow: 1;
     /* Creates a grid of meetup time divs over the background image */
     border: 2px solid white;
-
 }
 
 #times h3 {
-    /* Override the heading colour set in the general styles */
+    /* Override the heading colour set in general styles */
     color: #fafafa;
 }
 
-/* Gallery Page */
-
+/* Gallery page */
 #photos img {
     width: 100%;
     line-height: 1em;
 }
+
 #photos {
     line-height: 0;
 }
@@ -215,6 +209,14 @@ main {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -277,6 +279,10 @@ main {
         align-self: flex-end;
     }
 
+    /* Gallery */
+    #photos {
+        column-count: 3;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -284,34 +290,37 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+    /* Gallery */
+    #photos {
+        column-count: 4;
+    }
 }
 
-/* Larger devices (desktop only) */
-@media screen and (min-width: 1200px) {
-
+@media screen and (min-width: 1200px) {    
     /* Reasons section */
     #benefits {
         display: flex;
         flex-direction: row;
     }
 
-    #benefits>div {
+    #benefits > div {
         flex: 1;
     }
 
     #benefits-image {
-        order: 0;
+        order: 0
     }
 
     #benefits-mental {
         order: 1;
     }
 
-    #benefits-mental>div {
+    #benefits-mental > div {
         align-self: flex-start;
     }
 
-    #benefits-physical>div {
+    #benefits-physical > div {
         align-self: flex-end;
     }
 }
