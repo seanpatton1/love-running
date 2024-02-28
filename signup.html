@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tags for search engines-->
+    <!-- Meta tags for search engines -->
     <meta name="description"
         content="Love Running. Club for runners in Dublin, Ireland. Urban running, trail running. Dublin docklands and Phoenix Park">
     <meta name="keywords" content="love running, run, running club, runners, Ireland, Dublin, sport, exercise">
@@ -26,7 +26,9 @@
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav>
             <ul id="menu">
                 <li><a href="index.html">Home</a></li>
@@ -39,35 +41,32 @@
     <!-- Main content -->
     <main>
         <section id="signup">
-            <form action="https://formdump.codeinstitute.net" id="signup-form" method="post">
-                <h2><i class="fa-solid fa-heart-pulse"></i>LET'S GET YOU SIGNED UP!</h2>
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2><i class="fa-solid fa-heartbeat"></i> Let's get you signed up!</h2>
                 <label for="first_name">First Name</label>
-                <input id="first_name" type="text" name="first_name" class="text-input" required>
+                <input type="text" name="first_name" id="first_name" class="text-input" required>
                 <br>
                 <label for="last_name">Last Name</label>
-                <input id="last_name" type="text" name="last_name" class="text-input" required>
+                <input type="text" name="last_name" id="last_name" class="text-input" required>
                 <br>
                 <label for="email_address">Email Address</label>
-                <input id="email_address" type="email" name="email_address" class="text-input" required>
+                <input type="email" name="email_address" id="email_address" class="text-input" required>
                 <br>
                 <div class="radio-buttons">
                     <div>
                         <label for="road">Road</label>
-                        <input id="road" type="radio" name="running_preference" value="road" required checked>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
                     </div>
                     <div>
                         <label for="trail">Trail</label>
-                        <input id="trail" type="radio" name="running_preference" value="trail" required>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required>
                     </div>
                     <div>
-                        <label for="both">both</label>
-                        <input id="both" type="radio" name="running_preference" value="both" required>
-                    </div>
-                    <div>
-                        <button type="submit" class="join-button">Let's Run!</button>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required>
                     </div>
                 </div>
-
+                <button type="submit" class="join-button">Let's Run!</button>
             </form>
         </section>
     </main>
@@ -75,22 +74,31 @@
     <!-- Footer -->
     <footer>
         <ul id="social-networks">
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands fa-facebook"></i></a>
+            <li>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
             </li>
-            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            <li>
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter-square"></i></a>
             </li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fa-brands fa-youtube"></i></a>
+            <li>
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube-square"></i></a>
             </li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                    aria-label="Visit our Instagram page (opens in a new tab)"><i
-                        class="fa-brands fa-instagram"></i></a></li>
+            <li>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+            </li>
         </ul>
     </footer>
-    <!-- Font Awesome Kit-->
-    <script src="https://kit.fontawesome.com/17fadc6c88.js" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
